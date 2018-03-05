@@ -11,7 +11,8 @@ import java.util.Calendar;
 public class MyImage {
     private String title, description, path;
     private long datetimeLong;
-    private SimpleDateFormat df = new SimpleDateFormat("MMMM d, yy  h:mm");
+    //https://github.com/google/gson/issues/920
+    private static SimpleDateFormat df = new SimpleDateFormat("MMMM d, yy  h:mm");
 
     public MyImage(String title, String description, String path,
             long datetimeLong) {
